@@ -313,7 +313,7 @@ if submit_button:
 
                     # 加载模型并预测
                     st.info("Loading the model and predicting the emission wavelength...")
-                    predictor = TabularPredictor.load("ag-20250609_005753")
+                    predictor = TabularPredictor.load("ag-20250609_005753",require_version_match=False)
 
                     # 指定模型列表
                     model_options = [
